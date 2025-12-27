@@ -1,0 +1,81 @@
+.about-page {
+  min-height: 100vh;
+  padding: 70px 20px;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+/* Main heading */
+.about-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+/* Description text */
+.about-description {
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #475569;
+}
+
+/* Team heading */
+.team-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #0f172a;
+}
+
+/* Team grid: 2 above, 2 below */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Individual card */
+.team-card {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.team-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.team-card a {
+  font-size: 14px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.team-card a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 700px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

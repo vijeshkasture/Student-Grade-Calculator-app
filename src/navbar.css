@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR CONTAINER */
+.navbar {
+  height: 64px;
+  width: 100%;
+  background-color: #0f172a;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 32px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* LEFT SIDE */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* RIGHT SIDE (DESKTOP) */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar-right a:hover {
+  color: #38bdf8;
+}
+
+/* HAMBURGER ICON (HIDDEN ON DESKTOP) */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* ---------------- MOBILE STYLES ---------------- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-right {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+
+    background-color: #0f172a;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px 0;
+
+    display: none;
+  }
+
+  .navbar-right.open {
+    display: flex;
+  }
+
+  .navbar-right a {
+    font-size: 16px;
+  }
+}
