@@ -187,5 +187,10 @@
   color: #2563eb;
 }
 
+.result-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
