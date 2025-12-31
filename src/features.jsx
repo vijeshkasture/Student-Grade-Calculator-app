@@ -1,4 +1,4 @@
-import "./Features.css";
+import "./features.css";
 import accurateIcon from "./assets/accurate.png";
 import simpleIcon from "./assets/simple.png";
 import performanceIcon from "./assets/performance.png";
