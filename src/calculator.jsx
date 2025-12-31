@@ -47,11 +47,21 @@ function Calculator() {
     const percentage = (totalObtained / totalPossible) * 100;
     const cgpa = percentage / 10;
 
+    let grade = "";
+
+if (percentage >= 90) grade = "A";
+else if (percentage >= 80) grade = "B";
+else if (percentage >= 70) grade = "C";
+else if (percentage >= 60) grade = "D";
+else grade = "F";
+
+
     setResult({
       totalObtained,
       totalPossible,
       percentage: percentage.toFixed(2),
       cgpa: cgpa.toFixed(2),
+      grade,
     });
 
     setError("");
@@ -150,6 +160,7 @@ function Calculator() {
           ) : (
             <p>{result.cgpa} CGPA</p>
           )}
+           <p><strong>Grade:</strong> {result.grade}</p>
         </div>
       )}
     </section>
