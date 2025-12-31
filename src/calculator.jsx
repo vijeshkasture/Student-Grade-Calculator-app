@@ -150,6 +150,7 @@ else grade = "F";
 
       {/* Result Box */}
       {result && (
+      <div className="result-wrapper">
         <div className="result-box">
           <h3>Result</h3>
 
@@ -170,6 +171,8 @@ else grade = "F";
     <h3>Grade : </h3>
     <p>{result.grade}</p>
   </div>
+          </div>
+
 )}
 
     </section>
