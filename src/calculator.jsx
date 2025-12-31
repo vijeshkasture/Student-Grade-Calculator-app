@@ -160,9 +160,16 @@ else grade = "F";
           ) : (
             <p>{result.cgpa} CGPA</p>
           )}
-           <p><strong>Grade:</strong> {result.grade}</p>
+    
         </div>
       )}
+      {result && (
+  <div className="grade-box">
+    <h3>Grade</h3>
+    <p>{result.grade}</p>
+  </div>
+)}
+
     </section>
   );
 }
