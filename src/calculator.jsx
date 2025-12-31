@@ -49,10 +49,12 @@ function Calculator() {
 
     let grade = "";
 
-if (percentage >= 90) grade = "A";
-else if (percentage >= 80) grade = "B";
-else if (percentage >= 70) grade = "C";
-else if (percentage >= 60) grade = "D";
+if (percentage >= 90) grade = "A+";
+else if (percentage >= 80) grade = "A";
+else if (percentage >= 70) grade = "B+";
+else if (percentage >= 60) grade = "B";
+else if (percentage >= 50) grade = "C";
+else if (percentage >= 40) grade = "D";
 else grade = "F";
 
 
@@ -165,7 +167,7 @@ else grade = "F";
       )}
       {result && (
   <div className="grade-box">
-    <h3>Grade</h3>
+    <h3>Grade : </h3>
     <p>{result.grade}</p>
   </div>
 )}
