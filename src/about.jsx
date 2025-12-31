@@ -79,6 +79,32 @@ function About() {
                         LinkedIn
                     </a>
                 </div>
+                                <div className="team-card">
+                    {/* <img src={vikram} alt="Vikram Singh Rajput" /> */}
+                    <img src={icon} alt="yashi" />
+                    <h4>Yashi Jain</h4>
+                    <a
+                        href="-"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
+                </div>
+
+                                <div className="team-card">
+                    {/* <img src={vikram} alt="Vikram Singh Rajput" /> */}
+                    <img src={icon} alt="vishal" />
+                    <h4>Vishal Yadav</h4>
+                    <a
+                        href="-"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
+                </div>
+
             </div>
         </section>
     );
