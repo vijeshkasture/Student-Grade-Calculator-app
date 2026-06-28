@@ -14,9 +14,7 @@ function About() {
 
             <p className="about-description">
                 ScoreMate is a mini project developed as part of the Data Structures
-                curriculum. The project was assigned to a team of four students, and all
-                members contributed equally to the planning, development, and
-                implementation of the application. The main objective of this project is
+                curriculum. The main objective of this project is
                 to apply data structures concepts in a practical scenario by designing a
                 dynamic student grade calculation system. This project demonstrates
                 collaborative teamwork, logical problem-solving, and the application of
